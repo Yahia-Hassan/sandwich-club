@@ -73,6 +73,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/also_known_tv" />
 
+
+        <!--The word were pushed off the screen, I searched online and found
+        this answer on Stack Overflow,
+        So I defined the right and left constraints and set the width to 0dp
+        and the constraints determined how wide the TextView should be-->
+
+        <!--https://stackoverflow.com/a/44186810/5255289-->
         <TextView
             android:id="@+id/description_tv"
             android:layout_width="0dp"
@@ -84,6 +91,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/description_label" />
 
+
+        <!--The same goes for this TextView as the description_tv TextView-->
         <TextView
             android:id="@+id/ingredients_tv"
             android:layout_width="0dp"
